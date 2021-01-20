@@ -1,12 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to my conlang's website (github thing [meh])
 
-You can use the [editor on GitHub](https://github.com/notinsanejustmad/yad/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This website will be used to document my language's dictionary for easy accessibility (as y grammar is beautifully in a .tex file, which i may or may not provide here later on)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### short introduction
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Yad is a language originally made for _nothing_ but is now used in the language/worldbuilding game "Garden" alongside a variety of other people's conlangs!!
+It is canonically spoken by a culture of mountain-dwelling peoples who have a strong conection to certain "spirit animals" like ravens or cats (the latter of which is scattered through my grammar documentation). The langugage is trying to achieve minimalism in word amount and I try to use not so much word compounding, which results in words having many meanings! example of this is the adjective "wi" which is used for "good; beautiful; shiny" or can just be an exclamation of approving.
 
 ```markdown
 Syntax highlighted code block
