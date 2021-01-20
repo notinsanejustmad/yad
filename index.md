@@ -7,25 +7,9 @@ This website will be used to document my language's dictionary for easy accessib
 Yad is a language originally made for _nothing_ but is now used in the language/worldbuilding game "Garden" alongside a variety of other people's conlangs!!
 It is canonically spoken by a culture of mountain-dwelling peoples who have a strong conection to certain "spirit animals" like ravens or cats (the latter of which is scattered through my grammar documentation). The langugage is trying to achieve minimalism in word amount and I try to use not so much word compounding, which results in words having many meanings! example of this is the adjective "wi" which is used for "good; beautiful; shiny" or can just be an exclamation of approving.
 
-```markdown
-Syntax highlighted code block
+### DISCLAIMER !!
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+I am shit at coding, so expect this to be shit!
 
 ### Jekyll Themes
 
