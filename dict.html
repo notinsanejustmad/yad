@@ -19,7 +19,7 @@
       <h1>H</h1>
       </header>
       <main>
-     <p>haa</p>
+     <p>ha</p>
       </main>
       <search>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
@@ -43,11 +43,11 @@ function myFunction() {
    for (j = 1 ; j < dictionary[i].length; j++) {
     if(dictionary[i][j] == filter) {
       ind == dictionary[i][0];
-    }
-   }
-     if (ind.indexOf(filter) > -1) {
+           if (ind.indexOf(filter) > -1) {
       temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '>' + dictionary[i][0] + '</a></li>');
     }
+    }
+   }
   }
   document.getElementById("myUL").innerHTML=temp;
 }
