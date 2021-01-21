@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1>v</h1>
+      <h1> </h1>
       </header>
       <main>
      <p>haa</p>
@@ -48,7 +48,7 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    b = document.getElementByClassName(filter.toLowerCase());
+    b = document.getElementsByClassName(filter.toLowerCase());
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
