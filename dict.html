@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1> HHHHHH</h1>
+      <h1> </h1>
       </header>
       <main>
      <p>ha</p>
@@ -48,14 +48,14 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    b = li[i].getElementById(filter.toLowerCase());
+    b = document.getElementById(filter.toLowerCase());
     txtValue2 = b.textContent || b.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
-    if (a.getElementsByName(b).id.indexOf(filter) > -1) {
+    if (document.getElementsByName(b).id.indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
