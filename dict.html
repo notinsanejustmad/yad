@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1> HA</h1>
+      <h1> H</h1>
       </header>
       <main>
      <p>ha</p>
@@ -49,16 +49,15 @@ function myFunction() {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     c = filter.toLowerCase()
-    const container = document.querySelector("#myUL");
-    const matches = container.querySelectorAll(li[c]);
-    b = document.querySelectorAll(search.c > a);
+    var container = document.querySelector("#myUL");
+    var matches = container.querySelectorAll(li[c]);
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
-    console.log(b[i])
-    if (b[i].indexOf(filter) > -1) {
+    console.log(matches[i])
+    if (matches[i].indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
