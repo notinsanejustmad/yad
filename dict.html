@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1> Ha </h1>
+      <h1> H </h1>
       </header>
       <main>
      <p>ha</p>
@@ -38,7 +38,7 @@
         <script>
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue, b;
+  var input, filter, ul, li, a, i, txtValue, b, c;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
@@ -48,7 +48,8 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    b = document.querySelectorAll(search.filter.toLowerCase() > a);
+    c = filter.toLowerCase()
+    b = document.querySelectorAll(search.c > a);
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
