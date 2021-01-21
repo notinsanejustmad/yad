@@ -19,7 +19,7 @@
       <h1> </h1>
       </header>
       <main>
-     <p>haha</p>
+     <p>h</p>
       </main>
       <search>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
@@ -48,18 +48,19 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    b = li[i].getElementsByClassName(txtValue.toLowerCase())[0];
+    b = li[i].getElementsByClassName(filter.toLowerCase())[0];
     txtValue2 = b.textContent || b.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
-    if (txtValue2.toUpperCase().indexOf(filter) > -1) {
+    if (txtValue2) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
+    txtValue2 = null;
   }
 }
 </script>
