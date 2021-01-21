@@ -19,19 +19,19 @@
       <h1> </h1>
       </header>
       <main>
-     <p>work!!</p>
+     <p>work!</p>
       </main>
       <search>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
 <ul id="myUL">
-  <li><a href="dictionary.html/#al" class="2sg pronoun al">al</a></li>
-  <li><a href="dictionary.html/#ane" class="other different too ane">ane</a></li>
-  <li><a href="dictionary.html/#asol" class="water lake ocean swim asol">asol</a></li>
-  <li><a href="dictionary.html/#asola" class="fish asola">asola</a></li>
-  <li><a href="dictionary.html/#ay" class="2pl pronoun ay">ay</a></li>
-  <li><a href="dictionary.html#byos" class="spider arachnid byos">byos</a></li>
-  <li><a href="dictionary.html#cisi" class="eye cisi">cisi</a></li>
+  <li><a href="dictionary.html#al" id="2sg pronoun al">al</a></li>
+  <li><a href="dictionary.html#ane" id="other different too ane">ane</a></li>
+  <li><a href="dictionary.html#asol" id="water lake ocean swim asol">asol</a></li>
+  <li><a href="dictionary.html#asola" id="fish asola">asola</a></li>
+  <li><a href="dictionary.html#ay" id="2pl pronoun ay">ay</a></li>
+  <li><a href="dictionary.html#byos" id="spider arachnid byos">byos</a></li>
+  <li><a href="dictionary.html#cisi" id="eye cisi">cisi</a></li>
 </ul>
         
         
@@ -48,7 +48,7 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1 | a.getElementsByClassName(txtValue.toUpperCase().indexOf(filter))[0] > -1) {
+    if (txtValue.toUpperCase().indexOf(filter) > -1 | li.getElementsById(txtValue.toUpperCase())[0] > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
