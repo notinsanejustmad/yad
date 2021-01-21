@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1> H </h1>
+      <h1> HA</h1>
       </header>
       <main>
      <p>ha</p>
@@ -49,6 +49,8 @@ function myFunction() {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     c = filter.toLowerCase()
+    const container = document.querySelector("#myUL");
+    const matches = container.querySelectorAll(li[c]);
     b = document.querySelectorAll(search.c > a);
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
