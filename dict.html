@@ -19,7 +19,7 @@
       <h1> </h1>
       </header>
       <main>
-     <p> this</p>
+     <p>works??</p>
       </main>
       <search>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
@@ -47,8 +47,8 @@ function myFunction() {
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText || li.getElementsByTagName('a')[0].className;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1 | li.getElementsByClassName(txtValue.toUpperCase().indexOf(filter))) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
