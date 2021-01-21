@@ -16,7 +16,7 @@
         </ul>
        </nav>
       <header>
-      <h1> G</h1>
+      <h1>H</h1>
       </header>
       <main>
      <p>haa</p>
@@ -36,7 +36,7 @@ function myFunction() {
     ["asola","water","sea"]
  ]
   input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
+  filter = input.value.toLowerCase();
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < dictionary.length; i++) {
@@ -45,7 +45,7 @@ function myFunction() {
       ind == dictionary[i][0];
     }
    }
-     if (ind.toUpperCase().indexOf(filter) > -1) {
+     if (ind.indexOf(filter) > -1) {
       temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '>' + dictionary[i][0] + '</a></li>');
     }
   }
