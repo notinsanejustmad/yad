@@ -40,7 +40,7 @@ function myFunction() {
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < dictionary.length; i++) {
-   for (j = 1 ; j < dictionary[i].length; j++) {
+   for (j = 0 ; j < dictionary[i].length; j++) {
     if(dictionary[i][j] == filter) {
       ind == dictionary[i][0];
       temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '>' + dictionary[i][0] + '</a></li>');
