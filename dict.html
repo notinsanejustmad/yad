@@ -48,15 +48,15 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    b[i+1] = document.getElementsByClassName(filter.toLowerCase());
-    b[i+1].id = filter;
+    b = document.getElementsByClassName(filter.toLowerCase());
+    b.id = filter;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
     console.log(b)
-    if (b[i+1].id.indexOf(filter) > -1) {
+    if (b.id.indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
