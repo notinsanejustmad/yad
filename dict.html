@@ -5,40 +5,15 @@
     <title>yadlang</title>
     <link rel="stylesheet" href="grammar.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-            <li><a href="index.html" class="aktuell">Home</a></li>
-            <li><a href="intro.html">Introduction</a></li>
-            <li><a href="grammar.html">Grammar</a></li>
-            <li><a href="dict.html">Dictionary</a></li>
-        </ul>
-       </nav>
-      <header>
-      <h1> V</h1>
-      </header>
-      <main>
-     <p>haa</p>
-      </main>
-      <search>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
-<ul id="myUL">
-</ul>
-        
-        
-        <script>
+          <script>
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue, b, c, j, ind, temp;
+  var input, filter, a, i, txtValue, b, c, j, ind, temp;
   const dictionary = {
-    ["al","2sg","pronoun"],["asola","water","sea"]
+    ["al","2sg","pronoun"], ["asola","water","sea"]
   }
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < dictionary.length; i++) {
@@ -51,9 +26,32 @@ function myFunction() {
       temp+="<li><a href="dictionary.html#"+dictionary[i][0]+">"+dictionary[i][0]"</a></li>";
     }
   }
-  document.getElementById("myUL").innerHTML=temp
+  document.getElementById("myUL").innerHTML=temp;
 }
 </script>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="aktuell">Home</a></li>
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+            <li><a href="dict.html">Dictionary</a></li>
+        </ul>
+       </nav>
+      <header>
+      <h1> G</h1>
+      </header>
+      <main>
+     <p>haa</p>
+      </main>
+      <search>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+</ul>
+        
+        
       </search>
      </body>
 </html>
