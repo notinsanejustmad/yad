@@ -3,8 +3,17 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 #myUL ul {
   color: #2F4F64;
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 a:link{
   color: #B9B5AD;
