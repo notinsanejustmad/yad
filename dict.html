@@ -18,7 +18,7 @@
       <h1>Dictionary</h1>
       </header>
       <main>
-     <p>Search for words, their translations or word type. <a href="dictionary.html">Alternatively go to the dictionary directly</a></p>
+     <p>Search for words, their translations or word type. <a href="dictionary.html">Alternatively go to the dictionary directly!</a></p>
       </main>
       <search>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for words..">
@@ -41,13 +41,13 @@ function myFunction() {
     c = true;
    for (j = 0 ; j < dictionary[i].length; j++) {
     if(dictionary[i][j].startsWith(filter)) {
-      c = false;
       ind == dictionary[i][0];
       if(temp == null){
         temp = (" ");
       }
-      if(c == false){
-      temp+=('<li><a href="dictionary.html#' + dictionary[i][0] + '">' + dictionary[i][0] + '</a></li>');}
+      if(c == true){
+      temp+=('<li><a href="dictionary.html#' + dictionary[i][0] + '">' + dictionary[i][0] + '</a></li>');
+      c = false;}
     }
    }
   }
