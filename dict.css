@@ -3,7 +3,7 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
-#myUL li {
+#myUL ul {
   color: #2F4F64;
 }
 a:link{
