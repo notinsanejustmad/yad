@@ -15,7 +15,7 @@
             <li><a href="dict.html">Dictionary</a></li>
         </ul>
        </nav>
-      <h1>B</h1>
+      <h1>D</h1>
       </header>
       <main>
      <p>haa</p>
@@ -29,7 +29,7 @@
                <script>
 function myFunction() {
   // Declare variables
-  var input, filter, a, i, txtValue, b, c, j, ind, temp;
+  var input, filter, a, i, txtValue, b, c, j, ind, temp, ntemp;
   const dictionary = [
     ["al","2sg","pronoun"], ["asola","water","sea"]
  ]
@@ -41,12 +41,17 @@ function myFunction() {
    for (j = 0 ; j < dictionary[i].length; j++) {
     if(dictionary[i][j] == filter) {
       ind == dictionary[i][0];
+      if(temp == null){
+        temp = (" ");
+      }
       temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '>' + dictionary[i][0] + '</a></li>');
     }
    }
   }
   if (temp != null) {
-  document.getElementById("myUL").innerHTML=temp;
+  ntemp = (" ");
+  document.getElementById("myUL").innerHTML=ntemp;
+    document.getElementById("myUL").innerHTML=ntemp;
   }
   else {
     temp = (" ");
