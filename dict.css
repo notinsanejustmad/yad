@@ -17,6 +17,7 @@ color: #ADBDB2;
   margin-top: -1px; /* Prevent double borders */
   background-color: #2F4F64; /* Grey background color */
   padding: 12px; /* Add some padding */
+  padding-right: 100px;
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
   color: black; /* Add a black text color */
