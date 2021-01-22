@@ -1,7 +1,8 @@
-
+  
 body {
-  background-color: #2F4F64;
-}  
+background-color: #2F4F64;
+color: #ADBDB2;
+}
 a:link{
   color: #B9B5AD;
 }
@@ -13,30 +14,4 @@ a:hover{
 }
 a:active{
   color: #B9B5AD;
-}
-header {
-background-color: #2F4F64;
-color: #ADBDB2;
-}
-main {
-  color: #ADBDB2;
-}
-
-/* !!!!!!!!!!!!!!!!!!!!!!!*/
-#myInput {
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
-
-#myUL li {
-  /* Remove default list styling */
-  color: #2F5F64;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
