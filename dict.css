@@ -17,16 +17,10 @@ color: #ADBDB2;
   color: #2F4F64;
 }
 #myUL li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
   background-color: #2F4F64; /* Grey background color */
-  padding-top: 12px;
-  padding-left: 12px;
-  padding-bottom: 12px;
-  padding-right: 100px;
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
+  color: #ADBDB2; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
 }
 #myUL li a:hover:not(.header) {
