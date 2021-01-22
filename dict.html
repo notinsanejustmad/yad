@@ -29,7 +29,7 @@
                <script>
 function myFunction() {
   // Declare variables
-  var input, filter, a, i, txtValue, b, c, j, ind, temp, ntemp;
+  var input, filter, a, i, txtValue, b, c, j, ind, temp, ntemp, o;
   const dictionary = [
     ["al","2sg","pronoun"], ["ane", "particle", "other","different","too"], ["asol","noun","abstract","water","water mass","ocean","sea","verb","swim"], ["asola","noun","neuter","animal","fish"], ["ay","pronoun","2pl"], ["byos","noun","masculine","spider","arachnid"]
  ]
@@ -44,7 +44,7 @@ function myFunction() {
       if(temp == null){
         temp = (" ");
       }
-      temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '>' + dictionary[i][0] + '</a></li>');
+      temp+=('<li><a href="dictionary.html#' + dictionary[i][0] + '">' + dictionary[i][0] + '</a></li>');
     }
    }
   }
