@@ -3,6 +3,9 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
+#myUL li {
+  color: #2F4F64;
+}
 a:link{
   color: #B9B5AD;
 }
