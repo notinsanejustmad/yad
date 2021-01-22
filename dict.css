@@ -3,6 +3,10 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
+.flex {
+  display: flex;
+  flex-direction: row;
+}
 #myUL {
   /* Remove default list styling */
   list-style-type: none;
