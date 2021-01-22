@@ -39,7 +39,7 @@ function myFunction() {
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < dictionary.length; i++) {
    for (j = 0 ; j < dictionary[i].length; j++) {
-    if(dictionary[i][j].indexOf(filter) < -1) {
+    if(dictionary[i][j].indexOf(filter) > -1) {
       ind == dictionary[i][0];
       if(temp == null){
         temp = (" ");
