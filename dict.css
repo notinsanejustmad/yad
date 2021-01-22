@@ -16,7 +16,9 @@ color: #ADBDB2;
   border: 1px solid #ddd; /* Add a border to all links */
   margin-top: -1px; /* Prevent double borders */
   background-color: #2F4F64; /* Grey background color */
-  padding: 12px; /* Add some padding */
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
   padding-right: 100px;
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
