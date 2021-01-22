@@ -1,7 +1,10 @@
   
-body {
+header {
 background-color: #2F4F64;
 color: #ADBDB2;
+}
+body {
+  background-color: #2F4F64;
 }
 a:link{
   color: #B9B5AD;
@@ -15,11 +18,6 @@ a:hover{
 a:active{
   color: #B9B5AD;
 }
-/* Add a black background color to the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
 /* !!!!!!!!!!!!!!!!!!!!!!!*/
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -32,7 +30,7 @@ a:active{
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myUL {
+#myUL li {
   /* Remove default list styling */
   color: #2F5F64;
   list-style-type: none;
