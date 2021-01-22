@@ -2,13 +2,6 @@
 body {
   background-color: #2F4F64;
 }  
-.header {
-background-color: #2F4F64;
-color: #ADBDB2;
-}
-main {
-  color: #ADBDB2;
-}
 a:link{
   color: #B9B5AD;
 }
@@ -21,6 +14,14 @@ a:hover{
 a:active{
   color: #B9B5AD;
 }
+header {
+background-color: #2F4F64;
+color: #ADBDB2;
+}
+main {
+  color: #ADBDB2;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!*/
 #myInput {
   background-position: 10px 12px; /* Position the search icon */
