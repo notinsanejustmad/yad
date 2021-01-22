@@ -44,6 +44,9 @@ function myFunction() {
    for (j = 0 ; j < dictionary[i].length; j++) {
     if(dictionary[i][j].startsWith(filter)) {
       ind == dictionary[i][0];
+            if(temp == null){
+        temp = ("");
+      }
       if(c == true){
       temp+=('<li><a href="dictionary.html#' + dictionary[i][0] + '">' + dictionary[i][0] + '</a></li>');
       c = false;}
@@ -51,8 +54,6 @@ function myFunction() {
    }
   }
   if (temp != null) {
-  ntemp = (" ");
-  document.getElementById("myUL").innerHTML=ntemp;
     document.getElementById("myUL").innerHTML=temp;
   }
   else {
