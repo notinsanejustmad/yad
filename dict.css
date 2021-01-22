@@ -1,10 +1,10 @@
-  
-header {
-background-color: #2F4F64;
-color: #ADBDB2;
-}
+
 body {
   background-color: #2F4F64;
+}  
+.header {
+background-color: #2F4F64;
+color: #ADBDB2;
 }
 main {
   color: #ADBDB2;
