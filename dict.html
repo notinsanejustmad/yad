@@ -56,6 +56,9 @@ function myFunction() {
   if (temp != null) {
     document.getElementById("myUL").innerHTML=temp;
   }
+  else if (temp == "") {
+    document.getElementById("myUL").innerHTML=temp;
+  }
   else {
     for (i = 0; i < dictionary.length; i++) {
       temp+=('<li><a href="dictionary.html#"' + dictionary[i][0] + '">' + dictionary[i][0] + '</a></li>');
