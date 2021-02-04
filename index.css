@@ -5,11 +5,6 @@ color: #ADBDB2;
 .main_text {
     text-align: center;
 }
-footer {
-    display: inline-block;
-    height: 100%;
-    vertical-align: bottom;
-}
 a:link{
   color: #B9B5AD;
 }
