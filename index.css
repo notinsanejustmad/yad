@@ -2,6 +2,9 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
+div.main_text {
+  text-align: center;
+}
 a:link{
   color: #B9B5AD;
 }
