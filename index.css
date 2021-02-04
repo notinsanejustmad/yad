@@ -2,8 +2,11 @@ body {
 background-color: #2F4F64;
 color: #ADBDB2;
 }
-.main_text {
-  text-align: center;
+footer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
 }
 a:link{
   color: #B9B5AD;
