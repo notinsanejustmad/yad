@@ -3,7 +3,8 @@ let color_name = document.getElementById("color_name");
 
 
 const color_change_func = () => {
-    let rand_color = document.getElementById("color_changer");
+    let temp = document.getElementById("color_changer");
+  let rand_color = temp.value;
     let rand_hex_code = "#" + rand_color;
     
     
