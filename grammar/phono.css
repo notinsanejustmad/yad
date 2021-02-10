@@ -1,4 +1,23 @@
-  
+    
+ .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   background-color: #686B91;
+} 
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  display: block;
+  color: #ADBDB2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+ background-color: #2F4F64;
+}
 body {
 background-color: #2F4F64;
 color: #ADBDB2;
