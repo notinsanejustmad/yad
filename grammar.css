@@ -5,7 +5,7 @@
    background-color: #686B91;
 } 
 .navbar li {
-  display: inline;
+  display: inline-block;
 }
 .navbar li a {
   display: block;
