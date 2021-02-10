@@ -1,6 +1,7 @@
 ## Welcome to my conlang's website (github thing [meh])
 
 This website will be used to document my language's dictionary for easy accessibility (as y grammar is beautifully in a .tex file, which i may or may not provide here later on)
+Also i will use this for random shit I or my friends make (without credit to them of course *laughs maniacally*).
 
 ### short introduction
 
@@ -10,6 +11,7 @@ It is canonically spoken by a culture of mountain-dwelling peoples who have a st
 ### DISCLAIMER !!
 
 I am shit at coding, so expect this to be shit!
+The layout for my conlang pages will probably be made by me(!!), so it will probably look shit.
 
 ### Jekyll Themes
 
