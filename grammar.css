@@ -14,6 +14,8 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+.navbar li a:hover {
+ background-color: #2F4F64;
 body {
 background-color: #2F4F64;
 color: #ADBDB2;
