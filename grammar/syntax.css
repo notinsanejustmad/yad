@@ -19,6 +19,7 @@
 }
  .sitelink {
   list-style-type: none;
+  width:30%;
   margin: 0;
   padding: 0;
    background-color: #686B91;
