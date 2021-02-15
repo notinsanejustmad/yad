@@ -44,5 +44,7 @@ a:active{
     clear: both;
 }
 h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
   text-align: center;
 }
