@@ -46,6 +46,8 @@ a:active{
 h2 {
   margin-top: 100px;
   margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right:30%;
   text-align: center;
   float: none;
 }
