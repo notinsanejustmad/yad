@@ -25,6 +25,7 @@
 } 
 .sitelink li a {
   display: block;
+ width: 30%;
   color: #ADBDB2;
   padding: 14px 16px;
   text-decoration: none;
