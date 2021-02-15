@@ -34,3 +34,7 @@ a:hover{
 a:active{
   color: #B9B5AD;
 }
+h2 {
+  float: left;
+  margin-right: 100px;
+}
