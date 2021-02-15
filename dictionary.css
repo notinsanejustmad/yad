@@ -37,5 +37,6 @@ a:active{
 .class {
   float: left;
   width: 50%;
+  overflow: hidden;
   margin-right: 100px;
 }
