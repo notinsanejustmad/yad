@@ -37,6 +37,9 @@ a:active{
 .entry {
   float: left;
   width: 50%;
-  overflow: hidden;
-  margin-right: 100px;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
