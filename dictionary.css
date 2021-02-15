@@ -36,6 +36,6 @@ a:active{
 }
 .class {
   float: left;
-  display: inline;
+  width: 50%;
   margin-right: 100px;
 }
