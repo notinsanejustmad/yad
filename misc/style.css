@@ -24,26 +24,21 @@ img {
 .navbar li a:hover {
  background-color: #2F4F64;
 }
- .itembar {
-     position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+ .sitelink {
   list-style-type: none;
+  width:30%;
   margin: 0;
   padding: 0;
    background-color: #686B91;
 } 
-.itembar li {
-  display: inline-block;
-}
-.itembar li a {
+.sitelink li a {
   display: block;
   color: #ADBDB2;
-  text-align: center;
+ width:100%;
   padding: 14px 16px;
   text-decoration: none;
 }
-.itembar li a:hover {
+.sitelink li a:hover {
  background-color: #2F4F64;
 }
 body {
