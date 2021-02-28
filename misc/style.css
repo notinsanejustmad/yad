@@ -42,14 +42,21 @@ a:active{
 }
 .flexbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  position: relative; 
 }
 .flexbox .content{
-  flex: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   z-index: 1;
 }
 .flexbox .image{
-  flex: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   z-index: -1;
 }
