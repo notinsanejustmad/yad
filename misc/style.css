@@ -2,3 +2,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+body {
+  backgrounnd-color: #2F4F64;
+  color:  #ADBDB2;
+}
