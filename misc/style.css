@@ -24,6 +24,28 @@ img {
 .navbar li a:hover {
  background-color: #2F4F64;
 }
+ .itembar {
+     position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   background-color: #686B91;
+} 
+.itembar li {
+  display: inline-block;
+}
+.itembar li a {
+  display: block;
+  color: #ADBDB2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.itembar li a:hover {
+ background-color: #2F4F64;
+}
 body {
 background-color: #2F4F64;
 color: #ADBDB2;
