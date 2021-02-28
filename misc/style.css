@@ -47,6 +47,9 @@ a:active{
 }
 .flexbox .content{
   flex: 65%;
+  z-index: 1;
 }
 .flexbox .image{
   flex: 35%;
+  z-index: -1;
+}
