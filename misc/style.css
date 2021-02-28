@@ -43,16 +43,21 @@ a:active{
 .flexbox {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative; 
 }
 .flexbox .content{
-    position: absolute;
-flex: 65%;
+flex: 70%;
+padding:0;
   z-index: 1;
+  background-color: #2F4F64;
+  color: #ADBDB2;
 }
 .flexbox .image{
-    position: absolute;
-    flex: 100%;
+  width:30%;
+  /* float:right; */
+  float:right;
+  padding:0;
+  flex: 100%;
   z-index: -1;
 }
