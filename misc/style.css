@@ -40,3 +40,13 @@ a:hover{
 a:active{
   color: #B9B5AD;
 }
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexbox .content{
+  flex: 65%;
+}
+.flexbox .image{
+  flex: 35%;
