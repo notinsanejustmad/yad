@@ -2,8 +2,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.navdiv {
-       position: -webkit-sticky; /* Safari */
+nav {
   position: sticky;
   top: 0;
 }
