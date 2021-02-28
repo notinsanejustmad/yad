@@ -50,6 +50,6 @@ a:active{
   z-index: 1;
 }
 .flexbox .image{
-  flex: 35%;
+  flex: 100%;
   z-index: -1;
 }
