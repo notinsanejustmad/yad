@@ -11,6 +11,6 @@ function myFunction() {
     var SS = String(d.getSeconds());
     var minus = "-";
     var dabble = ":";
-    document.getElementById(txt).innerHTML = string.concat(DD, minus, HH, dabble, mm, minus, MM, minus, YYsecond, minus, YYfirst, minus, SS);
+    document.getElementById("txt").innerHTML = DD + minus + HH + dabble + mm + minus + MM + minus + YYsecond + minus + YYfirst + minus + SS;
   }, 500);
 }
