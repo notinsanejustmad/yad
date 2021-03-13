@@ -30,7 +30,7 @@ function myFunction() {
         }
           }
       else if(MM==3||MM==5||MM==7||MM==10||MM==12){
-        DD = 30-21:
+        DD = 30-21;
         MM = MM-1;
       }
       else{
