@@ -11,6 +11,22 @@ function myFunction() {
     var SS = String(d.getSeconds());
     var minus = "-";
     var dabble = ":";
-    document.getElementById("txt").innerHTML = DD + minus + HH + dabble + mm + minus + MM + minus + YYsecond + minus + YYfirst + minus + SS;
+    var dot = "."
+    if (SS < 10) {
+  SS = "0" + SS;
+}
+    if (mm < 10) {
+  mm = "0" + mm;
+}
+    if (MM < 10) {
+  MM = "0" + MM;
+}
+    if (DD < 10) {
+  DD = "0" + DD;
+}
+    if (HH < 10) {
+  HH = "0" + HH;
+}
+    document.getElementById("txt").innerHTML = DD + minus + HH + dabble + mm + minus + MM + minus + YYsecond + dot + YYfirst + minus + SS;
   }, 500);
 }
