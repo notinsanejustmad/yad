@@ -8,6 +8,8 @@ function myFunction() {
     var YYy = YYYY.slice(0, 3);
     var YYY = YYYY.slice(3, 5);
     var SS = getSeconds();
-    document.getElementById(txt).innerHTML = DD + "-" + HH + ":" + mm + "-" MM + "-" + YYY + "-" + YYy + "-" + SS;
+    var minus = "-";
+    var dabble = ":";
+    document.getElementById(txt).innerHTML = string.concat(DD, minus, HH, dabble, mm, minus, MM, minus, YYY, minus, YYy, minus, SS);
   }, 500);
 }
