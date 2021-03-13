@@ -6,8 +6,8 @@ function myFunction() {
     var mm = String(d.getMinutes());
     var MM = String(d.getMonth() + 1);
     var YYYY = String(d.getFullYear());
-    var YYfirst = YYYY.slice(0, 3);
-    var YYsecond = YYYY.slice(3, 5);
+    var YYfirst = YYYY.slice(0, -2);
+    var YYsecond = YYYY.slice(2, 4);
     var SS = String(d.getSeconds());
     var minus = "-";
     var dabble = ":";
