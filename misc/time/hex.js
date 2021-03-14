@@ -24,6 +24,6 @@ function myFunction() {
     var end = newtemp.toString(16).toUpperCase();
     var hexcol = dayhex + end;
     document.body.style.backgroundColor = hexcol;
-    document.getElementById("txt").innerHTML = end;
+    document.getElementById("txt").innerHTML = hexcol;
       }, 50);
 }
