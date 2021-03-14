@@ -12,7 +12,7 @@ function myFunction() {
     var newtemp = 65536 / ini;
     newtemp = Math.trunc(newtemp);
     var end = newtemp.toString(16).toUpperCase();
-    document.getElementById("bod").style.backgroundColor = "#"end;
+    document.body.style.backgroundColor = "#"end;
     document.getElementById("txt").innerHTML = end;
       }, 500);
 }
