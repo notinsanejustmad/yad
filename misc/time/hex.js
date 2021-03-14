@@ -12,7 +12,8 @@ function myFunction() {
     var newtemp = 65536 / ini;
     newtemp = Math.trunc(newtemp);
     var end = newtemp.toString(16).toUpperCase();
-    document.body.style.backgroundColor = "#"end;
+    var hexcol = "'#" + end + "'";
+    document.body.style.backgroundColor = hexcol;
     document.getElementById("txt").innerHTML = end;
       }, 500);
 }
