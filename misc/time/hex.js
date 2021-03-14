@@ -12,6 +12,9 @@ function myFunction() {
           DD.toString(16).toUpperCase();
   dayhex = "0" + dayhex;
 }
+    else {
+      DD.toString(16).toUpperCase();
+    }
 
     totalsec = totalsec + temp + ss;
     var total = 86400;
