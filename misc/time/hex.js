@@ -9,11 +9,11 @@ function myFunction() {
     var DD = d.getDay();
     var dayhex = "hex";
         if (DD < 16) {
-          DD.toString(16).toUpperCase();
+          dayhex = DD.toString(16).toUpperCase();
   dayhex = "0" + dayhex;
 }
     else {
-      DD.toString(16).toUpperCase();
+      dayhex = DD.toString(16).toUpperCase();
     }
 
     totalsec = totalsec + temp + ss;
