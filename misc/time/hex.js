@@ -15,5 +15,5 @@ function myFunction() {
     var hexcol = end;
     document.body.style.backgroundColor = hexcol;
     document.getElementById("txt").innerHTML = end;
-      }, 500);
+      }, 50);
 }
