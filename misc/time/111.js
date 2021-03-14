@@ -10,9 +10,8 @@ function myFunction() {
     var SS = d.getSeconds();
      var minus = "-";
     var dabble = ":";
-    var dot = "."
-    for (i = -1 , i < HH, i++)
-    {
+    var dot = ".";
+    for (i = -1 , i < HH, i++){
       h = h + 1;
     }
              for (i = -1 , i < mm, i++)
