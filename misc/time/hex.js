@@ -6,7 +6,7 @@ function myFunction() {
     var ss = d.getSeconds();
     var totalsec = HH * 60 * 60;
     var temp = mm * 60;
-    var DD = d.getDay();
+    var DD = d.getDate();
     var dayhex = "hex";
         if (DD < 16) {
           dayhex = DD.toString(16).toUpperCase();
