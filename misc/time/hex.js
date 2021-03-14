@@ -11,5 +11,6 @@ function myFunction() {
     var ini = total / totalsec;
     var newtemp = 65536 / ini;
     var end = newtemp.toString(16).toUpperCase();
+    document.getElementById("txt").innerHTML = end;
       }, 500);
 }
