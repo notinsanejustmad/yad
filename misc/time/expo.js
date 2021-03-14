@@ -1,6 +1,6 @@
     
 function myFunction() {
-  times = 500;
+  var times = 500;
   s = 0;
   var sec = 0;
   var min = 0;
@@ -33,7 +33,7 @@ function myFunction() {
       }
     }
     fraction -= 0.5;
-    times = time * fraction;
+    times = times * fraction;
     
    
      if (sec < 60){
