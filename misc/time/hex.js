@@ -10,6 +10,7 @@ function myFunction() {
     var total = 86400;
     var ini = total / totalsec;
     var newtemp = 65536 / ini;
+    newtemp = Math.trunc(newtemp);
     var end = newtemp.toString(16).toUpperCase();
     document.getElementById("txt").innerHTML = end;
       }, 500);
