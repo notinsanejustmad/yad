@@ -7,15 +7,15 @@ function myFunction() {
     var minus = "-";
     var dabble = ":";
     var dot = "."
-    var fraction = (HH / 24) + (mm / 60) + (SS / 60);
+    var fractionH = (HH / 24);
+    var fractionM = (mm / 60);
+    var fractionS = (SS / 60);
     var inputH = document.getElementById("inputH").value;
     var inputM = document.getElementById("inputM").value;
     var inputS = document.getElementById("inputS").value;
-    var h = fraction / inputH;
-    fraction = fraction - (h * inputH);
-    var m = fraction / (inputM / inputH);
-    fraction = fraction - (h * inputM);
-    var s = fraction / (inputS / inputM / inputH);
+    var h = Math.trunc(fractionH / (1 / inputH));
+    var m = Math.trunc(fractionM / (1 / inputM));
+    var s = Math.trunc(fractionS / (1 / inputS));
     document.getElementById("txt").innerHTML = h + dabble + m + dabble + s;
 
     
