@@ -12,15 +12,15 @@ function myFunction() {
     var dabble = ":";
     var dot = ".";
     for (i = -2; i < HH; i++){
-      h = h + 1;
+      h = h + "|";
     }
              for (i = -2; i < mm; i++)
     {
-      m = m + 1;
+      m = m + "|";
     }
         for (i = -2; i < SS; i++)
     {
-      s = s + 1;
+      s = s + "|";
     }
              document.getElementById("txt").innerHTML = h + dabble + m + dabble + s;
 }, 50);
