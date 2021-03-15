@@ -20,7 +20,7 @@ function myFunction() {
     var total = 86400;
     var ini = total / totalsec;
     var newtemp = 65536 / ini;
-    newtemp = Math.trunc(newtemp);
+    newtemp = Math.round(newtemp);
     var end = newtemp.toString(16).toUpperCase();
     var hexcol = dayhex + end;
     document.body.style.backgroundColor = hexcol;
