@@ -134,3 +134,12 @@ padding:0;
 .dropdown3:hover .dropdown-content {
   display: block;
 }
+
+.spoiler {
+  color: black;
+  background-color: black;
+}
+.spoiler:hover {
+  color: #ADBDB2;
+    background-color: #2F4F64;
+}
