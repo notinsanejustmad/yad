@@ -15,7 +15,7 @@ var oneDay = 1000 * 60 * 60 * 24;
 var day = Math.floor(diff / oneDay);
     
     var one = Math.round(day / 16);
-    var two = Math.round(one / 16);
+    var two = Math.round(day / 16 / 16);
     var dayhex = one.toString(16).toUpperCase() + two.toString(16).toUpperCase();
 
     totalsec = totalsec + temp + ss;
