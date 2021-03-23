@@ -34,3 +34,19 @@ a:hover{
 a:active{
   color: #B9B5AD;
 }
+.entry {
+  float: left;
+  width: 50%;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right:30%;
+  float: left;
+}
