@@ -20,7 +20,7 @@
 			<div class="flex-container">
 			<table style="margin-right:50px">
 				<tr><td>on</td><td>isyela</td><td>isye-ni</td><td>don-oj</td></tr>
-				<tr><td>CLF</td><td>cat</td><td>silent-ABS</td><td>COP-A</td></tr>
+				<tr><td>CLF:animal</td><td>cat</td><td>silent-ABS</td><td>COP-A</td></tr>
 				<tr><td colspan="4">"The cat is silent"</td></tr>
 			</table>
 			<table>
@@ -29,16 +29,16 @@
 				<tr><td colspan="4">"Kora is not a cat"</td></tr>
 			</table>
 			</div>
-			<h2>Noun Cases</h2>
+			<h2 id="case">Noun Cases</h2>
 			<p>Jad has seven cases:<br>
-			Ergative, Absolutive, Nominative, Posessive, Commitative, Ornative and Locative.<br>
-			The order of these cases is ERG/ABS/NOM-COM-LOC-ORN. The Commitative and Ornative have the same suffix, but still can be distinguished by an "epenthetic affix" which will be explained in the following.</p>
+			Ergative, Absolutive, Nominative, Possessive, Commitative, Ornative and Locative.<br>
+			The order of these cases is ERG/ABS/NOM-POS-COM-LOC-ORN.</p>
 			<h3>Ergative</h3>
 			<p>The subject of a verb in a transitive sentence takes the ergative case, which remains unmarked. It also marks the subject on a reflexive verb.<p>
 			<div class="flex-container">
 			<table style="margin-right:50px">
 				<tr><td>i-∅</td><td>on</td><td>isyela-ni</td><td>ghim-ic</td></tr>
-				<tr><td>1SG-ERG</td><td>CLF</td><td>cat-ABS</td><td>love-F</td></tr>
+				<tr><td>1SG-ERG</td><td>CLF:animal</td><td>cat-ABS</td><td>love-F</td></tr>
 				<tr><td colspan="4">"I love the cat"</td></tr>
 			</table>
 			<table>
@@ -66,28 +66,109 @@
 			<div class="flex-container">
 			<table style="margin-right:50px">
 				<tbody><tr><td>i</td><td>on</td><td>isyela-ni</td><td>ghim-ic</td><td>sem</td><td>ild-ar</td><td>i</td><td>ghim-oj</td><td>nef</td></tr>
-				<tr><td>1SG</td><td>CLF</td><td>cat-ABS</td><td>love-F</td><td>but</td><td>3SG-NOM</td><td>1SG</td><td>love-A</td><td>NEG</td></tr>
+				<tr><td>1SG</td><td>CLF:animal</td><td>cat-ABS</td><td>love-F</td><td>but</td><td>3SG-NOM</td><td>1SG</td><td>love-A</td><td>NEG</td></tr>
 				<tr><td colspan="9">"I love the cat but it doesn't love me"</td></tr>
 			</tbody></table>
 			<table>
 				<tbody><tr><td>i</td><td>on</td><td>isyela-ni</td><td>ghim-ic</td><td>sem</td><td>ild-ar</td><td>ow-kaj</td></tr>
-				<tr><td>1SG</td><td>CLF</td><td>cat-ABS</td><td>love-F</td><td>but</td><td>3SG-NOM</td><td>travel-A</td></tr>
+				<tr><td>1SG</td><td>CLF:animal</td><td>cat-ABS</td><td>love-F</td><td>but</td><td>3SG-NOM</td><td>travel-A</td></tr>
 				<tr><td colspan="9">"I love the cat but it runs (away)"</td></tr>
 			</tbody></table>
 			</div>
-			<h3>Comitative</h3>
-			<p>The comitative is used to express something similiar to the english word "with" and is marked by the suffix <em>-dog</em>, although the /d/ is dropped after consonants that aren't approximants. The comitative case can also function as a Instrumental case.</p>
+			<h3>Possessive</h3>
+			<p>The possessive case marks the possessor of something (just like 's in english). The suffix is <em>-ja</em>. /i/ and /e/ are dropped if a word marked by this case ends in them. This includes the 1st person singular <em>i</em>. Noun possessed by the possessor can't have an article.</p>
 			<div class="flex-container">
 			<table>
-				<tr><td>i</td><td>isyela-ni-dog</td><td>ow-ic</td></tr>
-				<tr><td>1SG</td><td>cat-ABS-COM</td><td>travel-F</td></tr>
-				<tr colspan="3"><td>"I travel with a cat"</td></tr>
+				<tr><td>ja</td><td>isyela</td></tr>
+				<tr><td>1SG.POS</td><td>cat</td></tr>
+				<tr><td colspan="2">"My cat"</td></tr>
+			</table>
+			</div>
+			<h3>Comitative</h3>
+			<p>The comitative is used to express something similiar to the english word "with" and is marked by the suffix <em>-dog</em>, although the /d/ is dropped after consonants that aren't approximants. The comitative case can also function as a Instrumental case. If the noun marked with comitative is a subject and has a different grammatical gender than the non-marked subject, the verb inflects as if it had a neuter subject.</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>i</td><td>isyela-dog</td><td>ow-et</td></tr>
+				<tr><td>1SG</td><td>cat-COM</td><td>travel-N</td></tr>
+				<tr><td colspan="3">"I travel with a cat"</td></tr>
 			</table>
 			<table>
-				<tr><td>i</td>
+				<tr><td>i</td><td>ifela-dog</td><td>ife-t</td></tr>
+				<tr><td>1SG</td><td>knife-COM</td><td>cut-N</td></tr>
+				<tr><td colspan="3">"I cut with the knife"</td><tr>
+			</table>
+			</div>
+			<h3>Locative</h3>
+			<p>The locative serves the purpose of expressing that a given noun is in, on, or around another noun. It uses the suffix <em>-ko</em> with the /k/ being dropped after stops, uvular fricatives and /m/.</p>
+			<div class="flex-container">
+			<table class="marley">
+				<tr><td>zin</td><td>zola</td><td>on</td><td>isyela-ko</td><td>don-et</td></tr>
+				<tr><td>CLF:people</td><td>kid</td><td>CLF:animal</td><td>cat-LOC</td><td>COP-N</td></tr>
+				<tr><td colspan="4">"The kid is on the cat"</td></tr>
+			</table>
+			</div>
+			<h3>Ornative</h3>
+			<p class="check_again">The Ornative is used to denote that X is worn by Y (ornates it). It uses <em>-ica</em> as suffix, although the /i/ is dropped after another vowel. If the root word ends in /a/, that /a/ is dropped instead of the /i/.<br>This case is like a passive version of the Locative case, since the "agent", or the thing ornating is after the "ornatee".</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>ba</td><td>kheme</td><td>on</td><td>isyel-ica</td></tr>
+				<tr><td>CLF:place</td><td>tower</td><td>CLF:animal</td><td>cat-ORN</td></tr>
+				<tr><td colspan="4">"The cat is on the tower (lit. The tower is ornated by the cat)"</td></tr>
+			</table>
+			</div>
+			
+
+			<h2>Grammatical gender and Noun classes</h2>
+			<p class="check_again">Jad has 5 grammatical genders, aswell as 6 specific noun classes. The genders are Inanimate, Masculine,
+			Feminine, Neuter, Abstract, and they are (normally) assigned based on the ending of the word. There also are noun classes for Places, People, Plants, Masses of water, Animals, and Non-visible things; but the Inflections for the
+			grammatical gender are kept. The definite articles differs for each of the genders and dictionary entries show these, as well as the noun classes a word can take.</p>
+			<h3>Inanimate</h3>
+			<p>The inanimate gender occurs on words with the endings <em>-e/-n/-z</em> and its definite article is <em>zoq</em>. Verbs and adjectives agreeing with inanimate words take the suffix <em>-tan</em> where the /t/ is dropped after /t c d g m ç v ɣ/.</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>zoq</td><td>kheme</td><td>xoe-tan</td></tr>
+				<tr><td>DET.INAN</td><td>tower</td><td>tall-INAN</td></tr>
+				<tr><td colspan="4">"The tall tower"</td>
+			</table>
+			</div>
+			<h3>Masculine</h3>
+			<p>The masculine occurs on words with the endings <em>-gh/-m/-s/-je</em> and its definite article is <em>ka</em>. Verbs and adjectives agreeing with masculine verbs take the suffix <em>-wag</em> where the /w/ is dropped after /a/ and approximants. If the word ends with /u/ the /u/ is deleted.</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>ka</td><td>dayalim</td><td>wije-wag</td></tr>
+				<tr><td>DET.M</td>village</td><td>important-M</td></tr>
+				<tr><td colspan="3">"The important village"</td></tr>
+			</table>
+			</div>
+			<h3>Feminine</h3>
+			<p>The feminine occurs on words with the ending <em>-i</em> and its definite article is <em>si</em>. Verbs and adjectives agreeing with feminine verbs take the suffix <em>-ic</em>.</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>si</td><td>cisi-ni</td><td>nogho-ic</td></tr>
+				<tr><td>DET.F</td><td>eye-ABS</td><td>see-F</td></tr>
+				<tr><td colspan="3">"The eye sees"</td></tr>
+			</table>
+			</div>
+			<h3>Neuter</h3>
+			<p>The neuter occurs on words with the endings <em>-l/-o/-d/-tla/-ja</em> and its definite article is <em>ki</em>. Verbs and adjecitves agreeing with neuter verbs take the suffix <em>-net</em> where the /n/ is dropped after nasals, unvoiced consonants and /w/.</p>
+			<div class="flex-container">
+			<table>
+				<tr><td>ki</tr><td>zola-ni</td><td>ow-et</td></tr>
+				<tr><td>DET.N</tr><td>child-ABS</td><td>travel-N</td></tr>
+				<tr><td colspan"3">"The child travels"</td></tr>
+			</table>
+			</div>
 				
+
 			
 			
+neut: -a -k
+abst: -l -o -d -tla -ja
+fem:  -i
+inan: -e -n -z
+masc: -gh -m -s -je
+				
+				
 		
 		</main>
 		</body>
