@@ -1,0 +1,156 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>yadlang</title>
+    <link rel="stylesheet" href="phono.css">
+  </head>
+  <body>
+  <p>Enter word and word type (n/v/adj)</p>
+<div id="divider">
+</div>
+
+	<script>
+	function myFunction() {
+		var word = document.getElementById("input1").value;
+		var type = document.getElementById("input2").value;
+		var ABS;
+		var NOM;
+		var POS;
+		var COM;
+		var LOC;
+		var ORN;
+		switch(type){
+  case "n":
+		if(word.endsWith("n")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("m")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"o"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("x")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"o"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("r")){
+			ABS = word+"ni"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"o"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("b")||word.endsWith("d")||word.endsWith("g")){
+			ABS = word+"ni"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"o"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("k")||word.endsWith("p")||word.endsWith("c")||word.endsWith("t")||word.endsWith("q")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"o"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("s")||word.endsWith("y")||word.endsWith("kh")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"ko"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("f")){
+			ABS = word+"i"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"ko"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("v")){
+			ABS = word+"ni"
+			NOM = word+"ar"
+			POS = word+"ja"
+			COM = word+"og"
+			LOC = word+"ko"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("e")||word.endsWith("i")){
+			ABS = word+"ni"
+			NOM = word+"far"
+			POS = word.substring(0, word.length - 1)+"ja";
+			COM = word+"dog"
+			LOC = word+"ko"
+			ORN = word+"ca"
+			
+		}
+		else if(word.endsWith("w")||word.endsWith("l")||word.endsWith("j")){
+			ABS = word+"ni"
+			NOM = word+"far"
+			POS = word+"ja"
+			COM = word+"dog"
+			LOC = word+"ko"
+			ORN = word+"ica"
+		}
+		else if(word.endsWith("a")){
+			ABS = word+"ni"
+			NOM = word+"far"
+			POS = word+"ja"
+			COM = word+"dog"
+			LOC = word+"ko"
+			ORN = word.substring(0, word.length - 1)+"ica"
+		}
+		else if(word.endsWith("o")){
+			ABS = word+"ni"
+			NOM = word+"far"
+			POS = word+"ja"
+			COM = word+"dog"
+			LOC = word+"ko"
+			ORN = word+"ca"
+		}
+		else{
+			ABS = word+"ni"
+			NOM = word+"far"
+			POS = word+"ja"
+			COM = word+"dog"
+			LOC = word+"ko"
+			ORN = word+"ica"
+		}
+		
+		document.getElementById("divider").innerHTML = "<table><tbody><tr><td></td><td>ABS</td><td>NOM</td><td>POS</td><td>COM</td><td>LOC</td><td>ORN</td></tr><tr><td>ABS</td><td>"+ABS+"</td><td></td><td>"+ABS.substring(0, ABS.length - 1)+"ja"+"</td><td>"+ABS+"dog"+"</td><td>"+ABS+"ko"+"</td><td>"+ABS+"ca"+"</td></tr><tr><td>NOM</td><td></td><td>"+NOM+"</td><td>"+NOM+"ja"+"</td><td>"+NOM+"og"+"</td><td>"+NOM+"o"+"</td><td>"+NOM+"ica"+"</td></tr><tr><td>POS</td><td></td><td></td><td>"+POS+"</td><td>"+POS+"dog"+"</td><td>"+POS+"ko"+"</td><td>"+POS.substring(0, POS.length - 1)+"ica"+"</td></tr><tr><td>COM</td><td></td><td></td><td></td><td>"+COM+"</td><td>"+COM+"o"+"</td><td>"+COM+"ica"+"</td></tr><tr><td>LOC</td><td></td><td></td><td></td><td></td><td>"+LOC+"</td><td>"+LOC+"ca"+"</td></tr><tr><td>ORN</td><td></td><td></td><td></td><td></td><td></td><td>"+ORN+"</td></tr></tbody></table>";
+    break;
+  case "v":
+    // code block
+    break;
+	case "adj":
+	//code block
+	break;
+  default:
+    // code block
+}
+	}
+</script>
+  <form id="form" action="/action_page.php">
+  First name: <input type="text" name="fname" id="input1"><br>
+  Last name: <input type="text" name="lname" id="input2"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+  </body>
+  </html>
