@@ -5,20 +5,41 @@
     <link rel="stylesheet" href="phono.css">
   </head>
   <body>
-  <p>Enter word and word type (n/v/adj)</p>
+  <p>Enter a noun</p>
 <div id="divider">
 </div>
-
+<table>
+  <tr><td>Word:</td> <td><input type="text" name="fname" id="input1"></td></tr><br>
+  <!--<tr><td>Word type:</td> <td><input type="text" name="lname" id="input2"></td></tr><br><br>-->
+  <tr><td><input type="button" onclick="myFunction()" value="Submit" id="submit"></td></tr>
+  </table>
 	<script>
+	// Get the input field
+var input = document.getElementById("input1");
+
+// Execute a function when the user releases a key on the keyboard
+if(input){
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("submit").click();
+  }
+});
+}
 	function myFunction() {
 		var word = document.getElementById("input1").value;
-		var type = document.getElementById("input2").value;
+		//var type = document.getElementById("input2").value;
 		var ABS;
 		var NOM;
 		var POS;
 		var COM;
 		var LOC;
 		var ORN;
+		//remove later!
+		type = "n";
 		switch(type){
   case "n":
 		if(word.endsWith("n")){
@@ -137,7 +158,13 @@
 		document.getElementById("divider").innerHTML = "<table><tbody><tr><td></td><td>ABS</td><td>NOM</td><td>POS</td><td>COM</td><td>LOC</td><td>ORN</td></tr><tr><td>ABS</td><td>"+ABS+"</td><td></td><td>"+ABS.substring(0, ABS.length - 1)+"ja"+"</td><td>"+ABS+"dog"+"</td><td>"+ABS+"ko"+"</td><td>"+ABS+"ca"+"</td></tr><tr><td>NOM</td><td></td><td>"+NOM+"</td><td>"+NOM+"ja"+"</td><td>"+NOM+"og"+"</td><td>"+NOM+"o"+"</td><td>"+NOM+"ica"+"</td></tr><tr><td>POS</td><td></td><td></td><td>"+POS+"</td><td>"+POS+"dog"+"</td><td>"+POS+"ko"+"</td><td>"+POS.substring(0, POS.length - 1)+"ica"+"</td></tr><tr><td>COM</td><td></td><td></td><td></td><td>"+COM+"</td><td>"+COM+"o"+"</td><td>"+COM+"ica"+"</td></tr><tr><td>LOC</td><td></td><td></td><td></td><td></td><td>"+LOC+"</td><td>"+LOC+"ca"+"</td></tr><tr><td>ORN</td><td></td><td></td><td></td><td></td><td></td><td>"+ORN+"</td></tr></tbody></table>";
     break;
   case "v":
-    // code block
+    /*if ((word.endsWith("a")||word.endsWith("k"))&&!word.endsWith("tla")&&!word.endsWith("ja")){
+	console.log(word)
+	}
+	else if(word.endsWith("l")||word.endsWith("o")||word.endsWith("d")||word.endsWith("tla")||word.endsWith("ja")){
+	
+	}
+	else if(word.endsWith(*/
     break;
 	case "adj":
 	//code block
@@ -147,10 +174,5 @@
 }
 	}
 </script>
-  <form id="form" action="/action_page.php">
-  First name: <input type="text" name="fname" id="input1"><br>
-  Last name: <input type="text" name="lname" id="input2"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
-</form>
   </body>
   </html>
