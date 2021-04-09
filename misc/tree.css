@@ -1,0 +1,147 @@
+.parent a,
+
+li {
+
+  font-size: 22px;
+
+  color: #000;
+
+  font-family: "Source Sans Pro", sans-serif;
+
+}
+
+.child a,
+
+li {
+
+  font-size: 18px;
+
+  color: #000;
+
+}
+
+.subchild a,
+
+li {
+
+  font-size: 18px;
+
+  color: #888888;
+
+}
+
+.s2child a,
+
+li {
+
+  font-size: 16px;
+
+  color: #ccc;
+
+}
+
+.tree,
+
+.tree ul {
+
+  list-style-type: none;
+
+  margin-left: 0 0 0 10px;
+
+  padding: 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+.tree li {
+
+  margin: 0 0 0 15px;
+
+  padding: 0 12px 0 20px;
+
+  position: relative;
+
+}
+
+.tree li::before,
+
+.tree li::after {
+
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+
+}
+
+/* horizontal line on inner list items */
+
+.tree li::before {
+
+  border-top: 2px solid #000;
+
+  top: 14px;
+
+  width: 15px;
+
+  height: 0;
+
+}
+
+/* vertical line on list items */
+
+.tree li:after {
+
+  border-left: 2px solid #000;
+
+  height: 100%;
+
+  width: 0px;
+
+  top: -5px;
+
+}
+
+/* lower line on list items from the first level because they don't have parents */
+
+.tree > li::after {
+
+  top: 15px;
+
+}
+
+/* hide line from the last of the first level list items */
+
+.tree > li:last-child::after {
+
+  display: none;
+
+}
+
+/* hide line from before the Home or starting page or first element	*/
+
+.tree > li:first-child::before {
+
+  display: none;
+
+}
+
+.tree ul:last-child li:last-child:after {
+
+  height: 20px;
+
+}
+
+.tree a:hover {
+
+  color: red;
+
+  font-weight: 500;
+
+  text-shadow: 1px 2px 2px #F3F3F3;
+
+}
