@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <title>yadlang</title>
-    <link rel="stylesheet" href="dict.css">
+   <!-- <link rel="stylesheet" href="dict.css"> -->
   </head>
   <body onload="checkCookie('name')" >
     <p id="text"> </p>
@@ -12,7 +12,7 @@
     function myFunction(tima) {
     const d = new Date();
     var temp = d.getTime();
-      temp = Math.truncate(temp/1000);
+      temp = Math.trunc(temp/1000);
     time = temp - tima;
       timeFunc(time);
     }
