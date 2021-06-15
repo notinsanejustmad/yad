@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>yadlang</title>
+    <link rel="stylesheet" href="dict.css">
+  </head>
+  <body onload="checkCookie('name')" >
+    <p id="text"> </p>
+    
+      
+      <script>
+    function myFunction(tima) {
+    const d = new Date();
+    var temp = d.getTime();
+      temp = Math.truncate(temp/1000);
+    time = temp - tima;
+      timeFunc(time);
+    }
+    
+        function timeFunc(time) {
+          var year;
+          var day;
+          var hour;
+          var minute;
+          var second;
+                while (true) {
+              if (time > 31556926) {
+    year = Math.trunc(time/315569);
+    time -= 315569 * year;
+       year = "year: " + year;
+      }
+      if (time > 86400) {
+       day = Math.trunc(time/86400);
+        time -= 86400 * day;
+        day = "<br>day: " + day;
+      }
+    if (time > 3600) {
+    hour = Math.trunc(time/3600);
+      time -= 3600 * hour;
+      hour = "<br>hour: " + hour;
+    }
+     if (time > 60) {
+       minute = Math.trunc(time/60);
+       time -= 60 * minute;
+       minute = "<br>minute: " + minute;
+     }
+     second = "<br>second: " + time;
+        }
+          document.getElementById('text').innerHTML = year + day + hour + minute + second;
+          time += 1;
+        }
+          
+        
+    
+    function setCookie(cname, cvalue) {
+  document.cookie = cname + "=" + cvalue + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+ }
+  }
+  return "";               
+}
+
+function checkCookie(name) {
+  var user = getCookie(name);
+  if (user != "") {
+   myFunction(name);
+  }
+  else {
+                               myFunction("0");
+                               }
+}
+    </script>
+  </body>
+</html>
+ 
