@@ -10,7 +10,7 @@ function myFunction() {
     var DD = d.getDate();
     var dayhex = "hex";
 	var unix = d.getTime();
-	var GMT = Math.trunc((unix - 1646164789894)/60);
+	var GMT = Math.trunc((unix - 1646164789894)/60/1000);
 	
 	
 	
