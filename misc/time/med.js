@@ -11,7 +11,7 @@ function myFunction() {
     var dayhex = "hex";
 	var unix = d.getTime();
 	var tz = d.getTimezoneOffset();
-	var GMT = Math.trunc((unix - 1646161189894)/60/1000) + tz;
+	var GMT = Math.trunc((unix - 1646161200000)/60/1000) + tz;
 	
 	
 	
