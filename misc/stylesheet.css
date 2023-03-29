@@ -1,0 +1,145 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+ .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   background-color: #686B91;
+} 
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  display: block;
+  color: #ADBDB2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+ background-color: #2F4F64;
+}
+ .sitelink {
+  list-style-type: none;
+  width:30%;
+  margin: 0;
+  padding: 0;
+   background-color: #686B91;
+} 
+.sitelink li a {
+  display: block;
+  color: #ADBDB2;
+ width:100%;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.sitelink li a:hover {
+ background-color: #2F4F64;
+}
+body {
+background-color: #2F4F64;
+color: #ADBDB2;
+}
+main {
+  text-align: left;
+}
+a:link{
+  color: #B9B5AD;
+}
+a:visited{
+  color: #B9B5AD;
+}
+a:hover{
+  color: #B9B5AD;
+}
+a:active{
+  color: #B9B5AD;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative; 
+}
+.flexbox .content{
+flex: 70%;
+padding:0;
+  z-index: 1;
+  background-color: #2F4F64;
+  color: #ADBDB2;
+}
+.flexbox .image{
+  width:30%;
+  /* float:right; */
+  float:right;
+  padding:0;
+  flex: 100%;
+  z-index: -1;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown1:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown2:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown3:hover .dropdown-content {
+  display: block;
+}
+
+.spoiler {
+  color: black;
+  background-color: black;
+}
+.spoiler:hover {
+  color: #ADBDB2;
+    background-color: #2F4F64;
+}
