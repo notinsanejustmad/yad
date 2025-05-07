@@ -1,7 +1,7 @@
 const RSS_URL = `https://notinsanejustmad.tumblr.com/rss`;
 cors: {
-origin: ['https://notinsanejustmad.github.io'],
-methods: 'GET,HEAD,PUT,PATCH,DELETE',
+origin: [`https://notinsanejustmad.github.io`],
+methods: `GET,HEAD,PUT,PATCH,DELETE`,
 }
 fetch(RSS_URL)
   .then(response => response.text())
