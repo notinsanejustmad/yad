@@ -1,4 +1,4 @@
-const RSS_URL = `https://codepen.io/spark/feed`;
+const RSS_URL = `https://notinsanejustmad.tumblr.com/rss`;
 
 fetch(RSS_URL)
   .then(response => response.text())
@@ -10,9 +10,9 @@ fetch(RSS_URL)
     items.forEach(el => {
       html += `
         <article>
-          <h2>
-            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
-              ${el.querySelector("title").innerHTML}
-            </a>
-          </h2>
+          el.querySelector("text")
         </article>
+      `;
+    });
+    document.body.insertAdjacentHTML("beforeend", html);
+  });
