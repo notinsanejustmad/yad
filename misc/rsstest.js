@@ -1,4 +1,4 @@
-const RSS_URL = `https://notinsanejustmad.tumblr.com/rss`;
+const RSS_URL = `https://cors.io/?https://notinsanejustmad.tumblr.com/rss`;
 fetch(RSS_URL)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
