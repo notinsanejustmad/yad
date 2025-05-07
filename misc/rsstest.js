@@ -1,6 +1,4 @@
-Access-Control-Allow-Origin: `tumblr.com`;
-const RSS_URL = `https://notinsanejustmad.tumblr.com/rss`;
-fetch(RSS_URL)
+fetch(`https://notinsanejustmad.tumblr.com/rss`)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
