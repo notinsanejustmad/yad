@@ -1,8 +1,0 @@
-# Depenendies
-node_modules
-
-# Build output
-bin
-
-# Directories that build generates. A test run will generate it but don't check in
-public
