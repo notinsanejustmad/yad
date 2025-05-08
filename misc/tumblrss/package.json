@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Monorepo root",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npm run dev -w packages/cli -w packages/sandbox",
+    "build": "npm run build -w packages/cli",
+    "test": "npm run test -w packages/test -w packages/cli",
+    "clean": "npm run clean --workspaces=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmoscraft/osmosfeed.git"
+  },
+  "keywords": [],
+  "author": "osmoscraft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osmoscraft/osmosfeed/issues"
+  },
+  "homepage": "https://github.com/osmoscraft/osmosfeed#readme",
+  "workspaces": [
+    "./packages/*"
+  ]
+}
