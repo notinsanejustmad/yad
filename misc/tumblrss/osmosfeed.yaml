@@ -1,9 +1,0 @@
-#########################
-# Full reference
-# https://github.com/osmoscraft/osmosfeed/blob/master/docs/osmosfeed-yaml-reference.md
-#########################
-
-cacheUrl: https://notinsanejustmad.github.io/yad/cache.json
-sources:
-  - href: notinsanejustmad.tumblr.com/rss # Get new feature announcement via this feed
-  - href: olsto.tumblr.com/rss
